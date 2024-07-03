@@ -7,9 +7,7 @@ function CloseModal(params) {
   console.log(close);
   close.style.display = "none";
 }
-function submitNumber(number) {
-  console.log(number, "number");
-
+function selectNumber(number) {
   // Remove the active class from all buttons
   var buttons = document.querySelectorAll(".number");
   buttons.forEach(function (button) {
@@ -19,5 +17,9 @@ function submitNumber(number) {
 
   // Add the active class to the clicked button
   buttons[number - 1].classList.add("active");
+}
+function submitReview() {
+    const modal = document.querySelector
+    
 }
 cancelBtn.addEventListener("click", CloseModal);
